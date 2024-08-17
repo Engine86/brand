@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(97, 95, 94);
+    block-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    inline-size: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
+}
+header{
+    inline-size: 100%;
+}
+.container{
+    inline-size: 100%;
+    max-inline-size: 98rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logo{
+    color: rgb(0, 0, 0);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+ul li a{
+    padding: 1em;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.close-menu,.open-meun{
+    color: rgb(0, 0, 0);
+    font-weight:400;
+    cursor: pointer;
+    display: none; 
+}
+.main{
+    block-size: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-inline-start: 5rem ;
+}
+.main h1{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-block-end: 10px;
+}
+.main p{
+    color:rgb(0, 0, 0);
+    font-weight: 600px;
+    font-size: 1.2rem;
+    max-inline-size: 400px;
+}
+.main button{
+    padding:1.2em;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-block-start: 1.2rem;
+}
+.main button:hover{
+    background-color: rgba(165, 164, 164, 0.404);
+    color: rgb(0, 0, 0);
+}
+@media(max-width:500px){
+.open-meun,.close-menu{
+    display: block;
+}
+    .menu-links{
+        position: fixed;
+        display: block;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 250px;
+        background-color: antiquewhite;
+        text-align: center;  
+    }
+        .menu-links.show{
+        left: 0%;
+    }
+     li{
+        padding: 40px 0px;
+    }
+}
+
+
